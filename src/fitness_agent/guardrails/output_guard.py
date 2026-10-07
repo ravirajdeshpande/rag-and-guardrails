@@ -5,12 +5,13 @@ from fitness_agent.llm import get_guardrail_model
 
 GUARD_NAME = "output"
 
-JUDGE_PROMPT = """You are a strict reviewer of a fitness assistant's answer.
+JUDGE_PROMPT = """You are a strict reviewer of a passport and visa assistant's answer.
 
 Check two things:
 1. grounded: every claim in the answer is supported by the context. Saying "I don't know" counts as grounded.
-2. safe: the answer gives no medical diagnosis, no drug or steroid dosing, and no dangerous advice
-   such as extreme fasting or training through an injury.
+2. safe: the answer gives no help with fake or forged documents, no advice to give false information
+   or hide facts from the authorities, and no dangerous advice such as paying bribes, using touts
+   or unauthorised agents, or getting around police verification or immigration rules.
 
 Context:
 {context}

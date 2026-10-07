@@ -1,7 +1,7 @@
 from fitness_agent.llm import get_agent_model
 
-REWRITE_PROMPT = """Rewrite the user's question as a short search query for a fitness knowledge base.
-Keep the key fitness terms, expand abbreviations, and drop filler words.
+REWRITE_PROMPT = """Rewrite the user's question as a short search query for a passport and visa knowledge base.
+Keep the key passport and visa terms, expand abbreviations such as PSK, POPSK, RPO, PCC, ARN and ECR, and drop filler words.
 Return only the search query.
 
 Question: {question}"""

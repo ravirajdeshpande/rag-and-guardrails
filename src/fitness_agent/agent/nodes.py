@@ -10,8 +10,8 @@ from fitness_agent.rag.retriever import retrieve
 
 REFUSALS = {
     "regex": "Sorry, I can't process that message. Please remove personal details or instructions to the assistant.",
-    "nlu": "Sorry, I can only help with safe fitness, exercise and nutrition questions.",
-    "output": "Sorry, I couldn't find a reliable answer to that in my fitness documents.",
+    "nlu": "Sorry, I can only help with lawful passport and visa application questions.",
+    "output": "Sorry, I couldn't find a reliable answer to that in my passport and visa documents.",
 }
 
 
